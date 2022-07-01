@@ -23,12 +23,9 @@ Before getting started coding in Java you will need an integrated development en
 Now that you downloaded an IDE, you need to download Java. Java Standard Edition (SE) 18 is the latest version, while Java SE 17 is the long term support (LTS) version. You will need to download Java SE 17 or 18 and the Java Development Kit (JDK) 18 that accompanies them. The JDK contains the development environemnt with which Java programs can be developed. You can download these on the Oracle [website](https://www.oracle.com/java/technologies/downloads/#java18).
 
 ## Developing in Java
+There are several benefits for developing in Java. One of the most important ones is Java's handgling of the program from high-level code (the Java code itself) down to low-level code (machine code) which the compute executes. Generally, programming languages translate the high-level code to low-level code via a compiler. The compiler converts your high-level code directly to the machine code of your computer. The problem is that different computers use different machine languages, which means to run your program in different computers you need to compile it with different compilers. Java solves this problem through the implementation of the Java Virtual Machine (JVM). 
 
-
-TODO:
-- byte-code
-- JVM
-- just in time (JIT) compiling
+The JVM compiles your high-level Java code to byte-code. Byte-code is the machine language of a JVM. A JVM is a virtual JAVA computer that is running inside your computer (comes from the JDK that we downloaded in the previous section). Now, since the JVMs running on all computers that download the JDK are the same, the byte-code is tranferable between computers. Finally, the JDK will also perform a Just-In-Time (JIT) compiling of the byte-code. This happens as the compiler converts the byte-code to machine code chuck by chuck throughout the execution of the program (just-in-time).
 
 ## Programming basics
 TODO:
