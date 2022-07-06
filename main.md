@@ -132,11 +132,59 @@ There are several naming conventions that dictate how variables, objects, classe
 
 ---
 ## Flow control
+### Branching mechanisms
+The branching mechanisms used in Java are similar to C and C++ (and other languages). Below is a quick review of `if` statements and some of its variants. While going over the examples below, keep in mind a few things:
+- the boolean conditions must be between brackets
+- if the boolean condition is evaluated to `true` then the statement immediately after it is executed, otherwise flow is sent to the next statement
+1. Standard `if-else` statements
+    These statements have two parts, the `if` and the `else`. The `if` is executed if the boolean condition is evaluated to true.
+    ```
+    int age = 24;
+    if (age > 21)
+        System.out.println("I'm over 21!");
+    else
+        System.out.println("I'm not over 21.");
+    ```
+    Output:
+    ```
+    I'm over 21!
+    ```
+2. Simple `if` statements
+    Simple `if` statements have statements that are executed when the boolean condition is evaluated as `true`.
+    ```
+    if (elevator == currentFloor)
+        door.open()
+    ```
+3. Multiple condition `if-else` statements
+    `else` statements can be used for creating more complex behaviour depending on the desired conditions. Notice here the usage of curly brackets to form the blocks in the if-else statements. These are not necesary here, but they become necessary if any one statement contains more than one line of code.
+     
+    ```
+    float currentCash = 14.35;
+    if (currentCash > 35.00){
+        System.out.println("You can buy a steak.");
+    } else if (currentCash > 20.00){
+        System.out.println("You can buy a pizza.");
+    } else if (currentCash > 10.00){
+        System.out.println("You can buy a burger.");
+    } else{
+        System.out.println("You don't have enough money to eat here.);
+    }
+    ```
+    Output
+    ```
+    You can buy a burger.
+    ```
+Additionally, you can nest any of the types of if-else statements above to create more complex behaviour.
+
+### Switch statement
+
+
+### Loops
 
 TODO: 
 - loops (for, while, do-while)
 - break, continue, exit
-- if else statements
+- if-else statements
 
 ---
 ## Classes
