@@ -177,7 +177,36 @@ The branching mechanisms used in Java are similar to C and C++ (and other langua
 Additionally, you can nest any of the types of if-else statements above to create more complex behaviour.
 
 ### Switch statement
+In a switch statement, one of a series of "case" statements are executed dependant on the controlling expression value. The switch statement also includes a `default` case that will run if the controlling expression does not take the value of any of the cases.
+```
+switch {controlling_expression}
+{
+    case case_name_1:
+        statements;
+        break;
+    case case_name_2:
+        statements;
+        break;
+    default:
+        statements;
+        break;
+}
+```
+Each case must end with a `break` statement to prevent the flow to continue into the next case. This feature allows us to implement two conditions for one case:
+```
+int name = 'Tom';
 
+switch {name}
+{
+    case 'Tom':
+    case 'Jerry':
+        statements;
+        break;
+    default:
+        statements;
+        break;
+}
+```
 
 ### Loops
 
